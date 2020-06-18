@@ -7,6 +7,23 @@
 </head>
 <body>
     <h1>Author</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <body>
+            <% data.forEach(function(a){ %>
+                <tr>
+                    <td> <%=a.id %> </td>
+                    <td> <%=a.name %> </td>
+                    
+                </tr>
+              <% }) %>  
+        </body>
+    </table>
     
 </body>
 </html>
