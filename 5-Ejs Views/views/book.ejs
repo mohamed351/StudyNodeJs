@@ -8,7 +8,20 @@
 <body>
     <h1>Books</h1>
     <table>
-        
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Author</th>
+        </thead>
+        <tbody>
+            <%for(let item of data){%>
+            <tr>
+                <td><%=item.id %></td>
+                <td><%=item.name %></td>
+                <td><%=item.author %></td>
+            </tr>
+            <%} %>
+        </tbody>
     </table>
     
 </body>
