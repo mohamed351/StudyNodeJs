@@ -1,9 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv/config");
 const app = express();
 
 
-mongoose.connect("mongodb://localhost:27017/RestAPI", { useNewUrlParser: true }, () => {
+mongoose.connect(process.env.DB_Connection, { useNewUrlParser: true }, () => {
     console.log("successfull connection to DbServer");
 });
 
