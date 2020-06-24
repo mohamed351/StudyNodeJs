@@ -6,5 +6,4 @@ const authorSchema = mongoose.Schema({
     }
 
 });
-
 exports = monogoose.model("authors", authorSchema);

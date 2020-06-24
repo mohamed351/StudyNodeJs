@@ -1,5 +1,6 @@
 const monogoose = require("mongoose");
 
+
 const bookSchema = monogoose.Schema({
   
     title: {
@@ -17,7 +18,8 @@ const bookSchema = monogoose.Schema({
     rating: {
         type: Number,
         required:false
-    }
+    },
+   
 
 });
-exports = monogoose.model("books", bookSchema);
+module.exports = monogoose.model("books", bookSchema);
