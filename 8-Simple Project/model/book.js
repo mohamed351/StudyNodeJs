@@ -19,6 +19,11 @@ const bookSchema = monogoose.Schema({
         type: Number,
         required:false
     },
+    authorId: {
+        type: monogoose.Schema.Types.ObjectId,
+        require: false
+        
+    }
    
 
 });
